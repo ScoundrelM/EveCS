@@ -36,7 +36,7 @@ namespace EveCharacterStatus
 			 * 
 			 * Add functionality to your character class to make this test pass.
 			 */
-			var Character = new Character("Bank Hangflex");
+			var character = new Character("Bank Hangflex");
 			Assert.AreEqual(character.firstName, "Bank");
 		}
 		
