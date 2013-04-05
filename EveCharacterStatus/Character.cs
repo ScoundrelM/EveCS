@@ -4,9 +4,9 @@ namespace EveCharacterStatus
 {
 	public class Character
 	{
-		string name;
-		string firstName;
-		string secondName;
+		public string name;
+		public string firstName;
+		public string lastName;
 		
 		public Character (string inputName)
 		{
@@ -16,8 +16,13 @@ namespace EveCharacterStatus
 			string [] split = name.Split(delimit);
 			
 			firstName = split[0];
-			secondName = split[1];
+			
+			if (split.Length > 1)
+			{
+				lastName = split[split.Length - 1];
+			}	
+				
 		}
+			
 	}
 }
-
