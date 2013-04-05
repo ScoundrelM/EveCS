@@ -46,6 +46,12 @@ namespace EveCharacterStatus
 		 * Write a test for the characters Surname and then write
 		 * the functionality into the Character class.
 		 */
+		[Test()]
+		public void Should_have_a_surname ()
+		{		
+			var character = new Character("Firsty Lasty");
+			Assert.AreEqual(character.lastName, "Lasty");
+		}
 		
 		/**
 		 * Part 4.
@@ -53,11 +59,29 @@ namespace EveCharacterStatus
 		 * Write a test that checks the surname is correct for a character 
 		 * with the name: "Hank B. Hangflex", then add the functionality
 		 * to your Character class.
-		 * 
+		*/
+		
+		[Test()]
+		public void Should_have_a_surname_inLongName ()
+		{
+			var character = new Character("Hank B. Hangflex");
+			Assert.AreEqual(character.lastName, "Hangflex");
+		}
+		
+		/* 
 		 * Write another test that checks that the surname is correct 
 		 * for a character called just "Hank", then add the functionality
 		 * to your Character class.
 		 */
+		
+		[Test()]
+		public void Should_have_no_surname_inSingleWordName ()
+		{
+			var character = new Character("Hank");
+			Assert.AreEqual(character.lastName, "");
+		}
+		 
 	}
 }
+
 
