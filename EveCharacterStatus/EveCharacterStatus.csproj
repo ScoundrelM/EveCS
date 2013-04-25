@@ -60,6 +60,8 @@
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="CharacterTest.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="Eve API\APIClient.cs" />
+    <Compile Include="ClientForAPI.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
