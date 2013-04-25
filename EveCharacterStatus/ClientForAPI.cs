@@ -1,33 +1,53 @@
 using System;
 using EveAI;
 using EveAI.Live;
+using EveAI.Live.Character;
 
 namespace EveCharacterStatus
 {
 	public class ClientForAPI
 	{
 		// information stored by the client from the api
+
+		private EveAI.Live.EveApi api;
+
 		public string characterName;
 
-		public ClientForAPI (Int32 iD1, string iD2, Int32 iD3)
+		private Character character;
+
+		private Int32 keyID;
+		private string vCode;
+		private Int32 characterID;
+
+		public ClientForAPI (Int32 _keyID, string _vCode, Int32 _characterID)
 		{
-			// Incoming identification information
-			Int32 incomingNumber1 =iD1;
-			string incomingString1 = iD2;
-			Int32 incomingNumber2 = iD3;
-
-			EveAI.Live.EveApi apiInformationStore = new EveAI.Live.EveApi  (incomingNumber1, incomingString1,  incomingNumber2);
-
-
-			string characterName =apiInformationStore.GetCharacterSheet().Name;
-
-
+			keyID =_keyID;
+			vCode = _vCode;
+			characterID = _characterID;
 		}
 
-		public getCharacter()
+		public Character  getCharacter(bool useCache = true)
 		{
 
+			if(this.character == null || !useCache)
+			{
+				CharacterSheet cs = getApi().GetCharacterSheet();
+				this.character = new Character(cs.Name);
+			}
+
+			return this.character;
 		}
+
+		private EveAI.Live.EveApi  getApi()
+			{
+				if (this.api == null)
+				
+				{
+				this.api = new EveAI.Live.EveApi(keyID,vCode,characterID);
+				}
+
+				return this.api;
+			}
 	}
 }
 

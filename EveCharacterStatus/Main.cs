@@ -8,15 +8,12 @@ namespace EveCharacterStatus
 	{
 		public static void Main (string[] args)
 	{
-			Console.WriteLine ("Name: ");
 
-			Character character = new Character();
+			ClientForAPI api = new ClientForAPI(1904964, "zesRGv3T3jsETycEd0gChWLvA4VCj1xPN7c5kGgfdwRgrXIE80ARYe1EDcvAUZw7",  268435455);
 
+			Character character = api.getCharacter(false);
 
-			Console.WriteLine("Your Character Name is: " +character.name);
-
-
-
+			Console.WriteLine ("Name: " + character.name);
 
 			Console.ReadLine();
 
