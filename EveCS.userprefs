@@ -1,18 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EveCharacterStatus\ClientForAPI.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EveCharacterStatus\ClientTest.cs">
     <Files>
-      <File FileName="EveCharacterStatus\Main.cs" Line="23" Column="1" />
-      <File FileName="EveCharacterStatus\Character.cs" Line="8" Column="1" />
-      <File FileName="EveCharacterStatus\CharacterTest.cs" Line="13" Column="18" />
-      <File FileName="EveCharacterStatus\ClientForAPI.cs" Line="33" Column="5" />
+      <File FileName="EveCharacterStatus\Main.cs" Line="13" Column="129" />
+      <File FileName="EveCharacterStatus\Character.cs" Line="13" Column="24" />
+      <File FileName="EveCharacterStatus\CharacterTest.cs" Line="9" Column="1" />
+      <File FileName="EveCharacterStatus\ClientForAPI.cs" Line="47" Column="48" />
+      <File FileName="EveCharacterStatus\ClientTest.cs" Line="11" Column="12" />
+      <File FileName="EveCharacterStatus\AttributeWriter.cs" Line="36" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="EveCharacterStatus" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="ClientForAPI.cs" selected="True" />
+            <Node name="ClientTest.cs" selected="True" />
           </Node>
         </State>
       </Pad>
