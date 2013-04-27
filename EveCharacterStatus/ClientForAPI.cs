@@ -15,6 +15,13 @@ namespace EveCharacterStatus
 
 		private Character character;
 
+		
+		public double intelligence;
+		public double perception;
+		public double charisma;
+		public double willpower;
+		public double memory;
+
 		private Int32 keyID;
 		private string vCode;
 		private Int32 characterID;
@@ -29,10 +36,16 @@ namespace EveCharacterStatus
 		public Character  getCharacter(bool useCache = true)
 		{
 
-			if(this.character == null || !useCache)
+			if(!useCache || this.character == null)
 			{
 				CharacterSheet cs = getApi().GetCharacterSheet();
 				this.character = new Character(cs.Name);
+				this.character.intelligence = cs.AttributeIntelligence;
+				this.character.perception = cs.AttributePerception;
+				this.character.charisma = cs.AttributeCharisma;
+				this.character.willpower = cs.AttributeWillpower;
+				this.character.memory = cs.AttributeMemory;
+
 			}
 
 			return this.character;
