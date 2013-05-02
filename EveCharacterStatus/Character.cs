@@ -1,18 +1,13 @@
 using System;
+using System.Collections.Generic;
 
 namespace EveCharacterStatus
 {
 	public class Character
 	{
 		public string name;
-				
-		public double intelligence;
-		public double perception;
-		public double charisma;
-		public double willpower;
-		public double memory;
-
-
+		
+		public Dictionary<string, double> attributes;
 
 		public Character (string _name)
 		{

@@ -20,40 +20,40 @@ namespace EveCharacterStatus
 			Assert.AreNotEqual(character,null);
 		}
 
-		[Test()]
-		public void Character_should_have_intelligence ()
-		{
-			var character = new Character("Hank Bangflex");
-			Assert.AreNotEqual(character.intelligence,null);
-		}
-
-		[Test()]
-		public void Character_should_have_perception ()
-		{
-			var character = new Character("Hank Bangflex");
-			Assert.AreNotEqual(character.perception,null);
-		}	
-
-		[Test()]
-		public void Character_should_have_charisma ()
-		{
-			var character = new Character("Hank Bangflex");
-			Assert.AreNotEqual(character.charisma,null);
-		}	
-
-		[Test()]
-		public void Character_should_have_willpower ()
-		{
-			var character = new Character("Hank Bangflex");
-			Assert.AreNotEqual(character.willpower,null);
-		}	
-
-		[Test()]
-		public void Character_should_have_memory ()
-		{
-			var character = new Character("Hank Bangflex");
-			Assert.AreNotEqual(character.memory,null);
-		}	
+//		[Test()]
+//		public void Character_should_have_intelligence ()
+//		{
+//			var character = new Character("Hank Bangflex");
+//			Assert.AreNotEqual(character.intelligence,null);
+//		}
+//
+//		[Test()]
+//		public void Character_should_have_perception ()
+//		{
+//			var character = new Character("Hank Bangflex");
+//			Assert.AreNotEqual(character.perception,null);
+//		}	
+//
+//		[Test()]
+//		public void Character_should_have_charisma ()
+//		{
+//			var character = new Character("Hank Bangflex");
+//			Assert.AreNotEqual(character.charisma,null);
+//		}	
+//
+//		[Test()]
+//		public void Character_should_have_willpower ()
+//		{
+//			var character = new Character("Hank Bangflex");
+//			Assert.AreNotEqual(character.willpower,null);
+//		}	
+//
+//		[Test()]
+//		public void Character_should_have_memory ()
+//		{
+//			var character = new Character("Hank Bangflex");
+//			Assert.AreNotEqual(character.memory,null);
+//		}	
 
 	}
 }

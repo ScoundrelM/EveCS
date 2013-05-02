@@ -15,11 +15,14 @@ namespace EveCharacterStatus
 			Character character = api.getCharacter(false);
 
 			Console.WriteLine ("Name: " + character.name);
-			attributeWriter.PrintIntelligence(character);
-			attributeWriter.PrintPerception(character);
-			attributeWriter.PrintCharisma(character);
-			attributeWriter.PrintWillpower(character);
-			attributeWriter.PrintMemory(character);
+			
+			
+			
+			// attributeWriter.PrintIntelligence(character);
+			// attributeWriter.PrintPerception(character);
+			// attributeWriter.PrintCharisma(character);
+			// attributeWriter.PrintWillpower(character);
+			// attributeWriter.PrintMemory(character);
 
 
 
