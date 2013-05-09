@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 //using EveAI.Live;
 
 
@@ -15,9 +16,13 @@ namespace EveCharacterStatus
 			Character character = api.getCharacter(false);
 
 			Console.WriteLine ("Name: " + character.name);
+
+			foreach (KeyValuePair<string, double> attrib in character.attributes)
+			{
+				attributeWriter.PrintAttribute(attrib);
+			}
 			
-			
-			
+
 			// attributeWriter.PrintIntelligence(character);
 			// attributeWriter.PrintPerception(character);
 			// attributeWriter.PrintCharisma(character);
