@@ -52,6 +52,22 @@ namespace EveCharacterStatus
 				character.attributes.Add("Charisma", cs.AttributeCharisma);
 				character.attributes.Add("Willpower", cs.AttributeWillpower);
 				character.attributes.Add("Memory", cs.AttributeMemory);
+
+				character.attributeAugmentations = new Dictionary<string, double>();
+
+				character.attributeAugmentations.Add ("Intelligence", cs.AttributeIntelligenceTotal - cs.AttributeIntelligence);
+				character.attributeAugmentations.Add ("Perception", cs.AttributePerceptionTotal - cs.AttributePerception);
+				character.attributeAugmentations.Add ("Charisma", cs.AttributeCharismaTotal - cs.AttributeCharisma);
+				character.attributeAugmentations.Add ("Willpower", cs.AttributeWillpowerTotal - cs.AttributeWillpower);
+				character.attributeAugmentations.Add ("Memory", cs.AttributeMemoryTotal - cs.AttributeMemory);
+
+				character.attributeTotals = new Dictionary<string,double> ();
+
+				character.attributeTotals.Add ("Intelligence", cs.AttributeIntelligenceTotal);
+				character.attributeTotals.Add ("Perception", cs.AttributePerceptionTotal);
+				character.attributeTotals.Add ("Charisma", cs.AttributeCharismaTotal);
+				character.attributeTotals.Add ("Willpower", cs.AttributeWillpowerTotal);
+				character.attributeTotals.Add ("Memory", cs.AttributeMemoryTotal);
 			}
 
 			return this.character;

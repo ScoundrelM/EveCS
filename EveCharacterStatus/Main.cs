@@ -21,7 +21,27 @@ namespace EveCharacterStatus
 			{
 				attributeWriter.PrintAttribute(attrib);
 			}
-			
+
+			foreach (KeyValuePair<string, double> attribAug in character.attributeAugmentations)
+			{
+				attributeWriter.PrintAttributeAugmentors(attribAug);
+			}
+
+			foreach (KeyValuePair<string,double> attribTotal in character.attributeTotals)
+			{
+				attributeWriter.PrintAttributeTotals (attribTotal);
+			}
+
+			foreach(KeyValuePair<string,double> attrib in character.attributes)
+			{
+				string currentAttribute = attrib.Key;
+
+				KeyValuePair<string,double> augmentor = new KeyValuePair<string,double>(currentAttribute, character.attributeAugmentations.GetValue(currentAttribute,));
+				KeyValuePair<string,double> total = new KeyValuePair<string, double>(currentAttribute, character.attributeTotals.GetValue(currentAttribute,));
+
+				attributeWriter.PrintAttributeBreakdown (attrib, augmentor, total );
+
+			}
 
 			// attributeWriter.PrintIntelligence(character);
 			// attributeWriter.PrintPerception(character);

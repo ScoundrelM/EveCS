@@ -21,6 +21,13 @@ namespace EveCharacterStatus
 		}
 
 //		[Test()]
+//		public void Attributes_should_not_return_null ()
+//		{
+//			var character = new Character("Hank Bangflex");
+//			Assert.AreNotEqual(character.attributes,null);
+//		}
+
+//		[Test()]
 //		public void Character_should_have_intelligence ()
 //		{
 //			var character = new Character("Hank Bangflex");

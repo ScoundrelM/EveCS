@@ -8,6 +8,8 @@ namespace EveCharacterStatus
 		public string name;
 		
 		public Dictionary<string, double> attributes;
+		public Dictionary<string,double> attributeAugmentations;
+		public Dictionary<string, double> attributeTotals;
 
 		public Character (string _name)
 		{
