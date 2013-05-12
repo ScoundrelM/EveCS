@@ -35,10 +35,9 @@ namespace EveCharacterStatus
 			foreach(KeyValuePair<string,double> attrib in character.attributes)
 			{
 				string currentAttribute = attrib.Key;
-				double defaultValue = 0.0;
 
-				KeyValuePair<string,double> augmentor = new KeyValuePair<string,double>(currentAttribute, character.attributeAugmentations.TryGetValue(currentAttribute, out defaultValue));
-				KeyValuePair<string,double> total = new KeyValuePair<string, double>(currentAttribute, character.attributeTotals.TryGetValue(currentAttribute, out defaultValue));
+				KeyValuePair<string,double> augmentor = new KeyValuePair<string,double>(currentAttribute, character.attributeAugmentations[currentAttribute]);
+				KeyValuePair<string,double> total = new KeyValuePair<string, double>(currentAttribute, character.attributeTotals[currentAttribute]);
 
 				attributeWriter.PrintAttributeBreakdown (attrib, augmentor, total );
 

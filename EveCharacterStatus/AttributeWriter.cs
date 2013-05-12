@@ -26,7 +26,7 @@ namespace EveCharacterStatus
 
 		public void PrintAttributeBreakdown(KeyValuePair<string, double> attributes, KeyValuePair<string,double> attributeAugmentors, KeyValuePair<string, double> attributeTotals)
 		{
-			Console.WriteLine ("Base Attribute {0}: {1}     :     Attribute Augmentation: {2}     :     Attribute Total: {3} ", attributes.Key, attributes.Value, attributeAugmentors.Value, attributeTotals.Value);
+			Console.WriteLine ("Base Attribute {0}: {1} : Attribute Augmentation: {2} : Attribute Total: {3}", attributes.Key, attributes.Value, attributeAugmentors.Value, attributeTotals.Value);
 		}
 
 		// public void PrintIntelligence(Character charToPrintFor)
