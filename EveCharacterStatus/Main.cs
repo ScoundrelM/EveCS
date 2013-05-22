@@ -17,21 +17,6 @@ namespace EveCharacterStatus
 
 			Console.WriteLine ("Name: " + character.name);
 
-			foreach (KeyValuePair<string, double> attrib in character.attributes)
-			{
-				attributeWriter.PrintAttribute(attrib);
-			}
-
-			foreach (KeyValuePair<string, double> attribAug in character.attributeAugmentations)
-			{
-				attributeWriter.PrintAttributeAugmentors(attribAug);
-			}
-
-			foreach (KeyValuePair<string,double> attribTotal in character.attributeTotals)
-			{
-				attributeWriter.PrintAttributeTotals (attribTotal);
-			}
-
 			foreach(KeyValuePair<string,double> attrib in character.attributes)
 			{
 				string currentAttribute = attrib.Key;
@@ -43,11 +28,6 @@ namespace EveCharacterStatus
 
 			}
 
-			// attributeWriter.PrintIntelligence(character);
-			// attributeWriter.PrintPerception(character);
-			// attributeWriter.PrintCharisma(character);
-			// attributeWriter.PrintWillpower(character);
-			// attributeWriter.PrintMemory(character);
 
 
 

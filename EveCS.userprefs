@@ -1,20 +1,20 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EveCharacterStatus\Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EveCharacterStatus\AttributeWriter.cs">
     <Files>
-      <File FileName="EveCharacterStatus\Main.cs" Line="23" Column="5" />
-      <File FileName="EveCharacterStatus\Character.cs" Line="10" Column="35" />
+      <File FileName="EveCharacterStatus\Main.cs" Line="1" Column="1" />
+      <File FileName="EveCharacterStatus\Character.cs" Line="1" Column="1" />
       <File FileName="EveCharacterStatus\CharacterTest.cs" Line="1" Column="1" />
       <File FileName="EveCharacterStatus\ClientForAPI.cs" Line="1" Column="1" />
       <File FileName="EveCharacterStatus\ClientTest.cs" Line="1" Column="1" />
-      <File FileName="EveCharacterStatus\AttributeWriter.cs" Line="12" Column="42" />
+      <File FileName="EveCharacterStatus\AttributeWriter.cs" Line="29" Column="48" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="EveCharacterStatus" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="Main.cs" selected="True" />
+            <Node name="AttributeWriter.cs" selected="True" />
           </Node>
         </State>
       </Pad>
