@@ -38,18 +38,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
-      <Private>False</Private>
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="EveAI.Core">
-      <HintPath>..\..\..\..\..\usr\local\share\eveai-2.6.4.0\EveAI.Core.dll</HintPath>
+      <HintPath>..\EveAI.Core.dll</HintPath>
     </Reference>
     <Reference Include="EveAI.Live">
-      <HintPath>..\..\..\..\..\usr\local\share\eveai-2.6.4.0\EveAI.Live.dll</HintPath>
-    </Reference>
-    <Reference Include="Ionic.Zip.Reduced">
-      <HintPath>..\..\..\..\..\usr\local\share\eveai-2.6.4.0\Ionic.Zip.Reduced.dll</HintPath>
+      <HintPath>..\EveAI.Live.dll</HintPath>
     </Reference>
     <Reference Include="nunit.core, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
       <Private>False</Private>
@@ -58,6 +51,9 @@
     <Reference Include="nunit.core.interfaces, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
       <Private>False</Private>
       <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
