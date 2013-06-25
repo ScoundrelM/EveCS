@@ -7,7 +7,7 @@ namespace EveCharacterStatus
 {
 	class MainClass
 	{
-		public static void Main (string[] args)
+		public static void Main(string[] args)
 	{
 			AttributeWriter attributeWriter = new AttributeWriter(new ConsoleWriter());
 
@@ -15,7 +15,7 @@ namespace EveCharacterStatus
 
 			Character character = api.getCharacter(false);
 
-			Console.WriteLine ("Name: " + character.name);
+			Console.WriteLine("Name: " + character.name);
 
 			foreach(KeyValuePair<string,double> attrib in character.attributes)
 			{
@@ -24,7 +24,7 @@ namespace EveCharacterStatus
 				KeyValuePair<string,double> augmentor = new KeyValuePair<string,double>(currentAttribute, character.attributeAugmentations[currentAttribute]);
 				KeyValuePair<string,double> total = new KeyValuePair<string, double>(currentAttribute, character.attributeTotals[currentAttribute]);
 
-				attributeWriter.PrintAttributeBreakdown (attrib.Key, attrib.Value, total.Value, augmentor.Value);
+				attributeWriter.PrintAttributeBreakdown(attrib.Key, attrib.Value, total.Value, augmentor.Value);
 
 			}
 
