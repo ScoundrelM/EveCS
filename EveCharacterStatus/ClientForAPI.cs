@@ -29,7 +29,7 @@ namespace EveCharacterStatus
 		private string vCode;
 		private Int32 characterID;
 
-		public ClientForAPI (Int32 _keyID, string _vCode, Int32 _characterID)
+		public ClientForAPI(Int32 _keyID, string _vCode, Int32 _characterID)
 		{
 			keyID =_keyID;
 			vCode = _vCode;

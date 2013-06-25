@@ -11,7 +11,7 @@ namespace EveCharacterStatus
 		public Dictionary<string,double> attributeAugmentations;
 		public Dictionary<string, double> attributeTotals;
 
-		public Character (string _name)
+		public Character(string _name)
 		{
 			name = _name;
 		}
