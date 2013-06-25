@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EveCharacterStatus", "EveCharacterStatus\EveCharacterStatus.csproj", "{68E6EB9B-A6AB-40C3-89DD-A1E3673C456F}"
 EndProject
 Global
@@ -13,6 +13,9 @@ Global
 		{68E6EB9B-A6AB-40C3-89DD-A1E3673C456F}.Debug|x86.Build.0 = Debug|x86
 		{68E6EB9B-A6AB-40C3-89DD-A1E3673C456F}.Release|x86.ActiveCfg = Release|x86
 		{68E6EB9B-A6AB-40C3-89DD-A1E3673C456F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = EveCharacterStatus\EveCharacterStatus.csproj

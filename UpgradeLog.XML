@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="EveCS">
+</Property><Property Name="Solution File" Value="C:\Users\Matt\Documents\Visual Studio 2010\Projects\Space Ship Madness\EveCS\EveCS.sln">
+</Property><Property Name="Date" Value="07 April 2013">
+</Property><Property Name="Time" Value="19:33">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="EveCS.sln" Description="File successfully backed up as C:\Users\Matt\Documents\Visual Studio 2010\Projects\Space Ship Madness\EveCS\Backup\EveCS.sln">
+</Event><Event ErrorLevel="0" Project="EveCharacterStatus" Source="EveCharacterStatus\EveCharacterStatus.csproj" Description="Project file successfully backed up as C:\Users\Matt\Documents\Visual Studio 2010\Projects\Space Ship Madness\EveCS\Backup\EveCharacterStatus\EveCharacterStatus.csproj">
+</Event><Event ErrorLevel="0" Project="EveCharacterStatus" Source="EveCharacterStatus\Main.cs" Description="File successfully backed up as C:\Users\Matt\Documents\Visual Studio 2010\Projects\Space Ship Madness\EveCS\Backup\EveCharacterStatus\Main.cs">
+</Event><Event ErrorLevel="0" Project="EveCharacterStatus" Source="EveCharacterStatus\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Matt\Documents\Visual Studio 2010\Projects\Space Ship Madness\EveCS\Backup\EveCharacterStatus\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="EveCharacterStatus" Source="EveCharacterStatus\CharacterTest.cs" Description="File successfully backed up as C:\Users\Matt\Documents\Visual Studio 2010\Projects\Space Ship Madness\EveCS\Backup\EveCharacterStatus\CharacterTest.cs">
+</Event><Event ErrorLevel="0" Project="EveCharacterStatus" Source="EveCharacterStatus\Character.cs" Description="File successfully backed up as C:\Users\Matt\Documents\Visual Studio 2010\Projects\Space Ship Madness\EveCS\Backup\EveCharacterStatus\Character.cs">
+</Event><Event ErrorLevel="0" Project="EveCharacterStatus" Source="EveCharacterStatus\EveCharacterStatus.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="EveCharacterStatus" Source="EveCharacterStatus\EveCharacterStatus.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="EveCS.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="EveCS.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="EveCharacterStatus" Source="EveCharacterStatus\EveCharacterStatus.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
