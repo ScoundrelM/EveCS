@@ -7,55 +7,61 @@ namespace EveCharacterStatus
 	[TestFixture()]
 	public class AttributeWriterTest
 	{
+		private SpyConsoleWriter mockWriter;
+		private AttributeWriter attributeWriter;
+
+		[SetUp]
+		public void Init ()
+		{
+			mockWriter = new SpyConsoleWriter ();
+			attributeWriter = new AttributeWriter (this.mockWriter);
+		}
+
+
 		[Test()]
 		public void Should_print_attribute_breakdown ()
 		{
-			var mockWriter = new SpyConsoleWriter();
-			var attributeWriter = new AttributeWriter(mockWriter);
+			this.attributeWriter.PrintAttributeBreakdown("Intelligence", 20, 19, 1);
 			
-			attributeWriter.PrintAttributeBreakdown("Intelligence", 20, 19, 1);
-			
-			Assert.AreEqual("Intelligence: \t\t20 (19) +1", mockWriter.lastWritten());
+			Assert.AreEqual("Intelligence: \t\t20 (19) +1", this.mockWriter.lastWritten());
+
 		}
 
 		[Test()]
 		public void Should_print_attribute()
 		{
-			var mockwriter = new SpyConsoleWriter ();
-			AttributeWriter attributeWriter = new AttributeWriter (mockwriter);
-
+		
 			KeyValuePair<string, double> mockAttribute = new KeyValuePair<string, double> ("test", 6);
 
-			attributeWriter.PrintAttribute (mockAttribute);
+			this.attributeWriter.PrintAttribute (mockAttribute);
 
-			Assert.AreEqual ("Base test: , 6",  mockwriter.lastWritten());
+			Assert.AreEqual ("Base test: , 6",  this.mockWriter.lastWritten());
 		}
 
 		[Test]
 		public void Should_print_attribute_augmentors()
 		{
-			var mockwriter = new SpyConsoleWriter ();
-			AttributeWriter attributeWriter = new AttributeWriter (mockwriter);
 
 			KeyValuePair<string, double> mockAttribute = new KeyValuePair<string, double> ("test", 3);
 
-			attributeWriter.PrintAttributeAugmentors (mockAttribute);
+			this.attributeWriter.PrintAttributeAugmentors (mockAttribute);
 
-			Assert.AreEqual ("test Augmentation: , 3", mockwriter.lastWritten ());
+			Assert.AreEqual ("test Augmentation: , 3", this.mockWriter.lastWritten ());
 		}
 
 		[Test]
 		public void Should_print_attribute_totals()
 		{
-			var mockwriter = new SpyConsoleWriter ();
-			AttributeWriter attributeWriter = new AttributeWriter (mockwriter);
 
 			KeyValuePair<string, double> mockAttribute = new KeyValuePair<string, double> ("test", 1.5);
 
-			attributeWriter.PrintAttributeTotals (mockAttribute);
+			this.attributeWriter.PrintAttributeTotals (mockAttribute);
 
-			Assert.AreEqual ("test Total: 1.5", mockwriter.lastWritten ());
+			Assert.AreEqual ("test Total: 1.5", this.mockWriter.lastWritten ());
 		}
+
+
+
 	}
 }
 
