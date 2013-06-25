@@ -1,5 +1,6 @@
 using System;
 using NUnit.Framework;
+using System.Collections.Generic;
 
 namespace EveCharacterStatus
 {
@@ -16,6 +17,20 @@ namespace EveCharacterStatus
 			
 			Assert.AreEqual("Intelligence: \t\t20 (19) +1", mockWriter.lastWritten());
 		}
+
+		[Test()]
+		public void Should_print_attribute()
+		{
+			var mockwriter = new SpyConsoleWriter ();
+			AttributeWriter attributeWriter = new AttributeWriter (mockwriter);
+
+			KeyValuePair<string, double> mockAttribute = new KeyValuePair<string, double> ("test", 6);
+
+			attributeWriter.PrintAttribute (mockAttribute);
+
+			Assert.AreEqual ("Base test: , 6",  mockwriter.lastWritten());
+		}
+	
 	}
 }
 
