@@ -9,55 +9,65 @@ namespace EveCharacterStatus
 		[Test()]
 		public void Should_have_a_name ()
 		{
-			/**
-			 * Part 1.
-			 * 
-			 * Write the character class required to make this test
-			 * pass.
-			 * 
-			 * You can run the test by pressing View/UnitTesting then 
-			 * clicking the green down arrow on the left.
-			 * 
-			 * After you've made it work, wire up the Main class to print
-			 * out the name of your character.
-			 * 
-			 * We're not going to populate the character using the API yet
-			 * so don't get side tracked.
-			 */
 			var character = new Character("Hank Bangflex");
 			Assert.AreEqual(character.name, "Hank Bangflex");
 		}
 		
 		[Test()]
-		public void Should_have_a_first_name ()
+		public void Character_should_not_return_null ()
 		{
-			/**
-			 * Part 2.
-			 * 
-			 * Add functionality to your character class to make this test pass.
-			 */
-			var Character = new Character("Bank Hangflex");
-			Assert.AreEqual(character.firstName, "Bank");
+			var character = new Character("Hank Bangflex");
+			Assert.AreNotEqual(character,null);
 		}
-		
-		/**
-		 * Part 3.
-		 * 
-		 * Write a test for the characters Surname and then write
-		 * the functionality into the Character class.
-		 */
-		
-		/**
-		 * Part 4.
-		 * 
-		 * Write a test that checks the surname is correct for a character 
-		 * with the name: "Hank B. Hangflex", then add the functionality
-		 * to your Character class.
-		 * 
-		 * Write another test that checks that the surname is correct 
-		 * for a character called just "Hank", then add the functionality
-		 * to your Character class.
-		 */
+
+//		[Test()]
+//		public void Attributes_should_not_return_null ()
+//		{
+//			var character = new Character("Hank Bangflex");
+//			Assert.AreNotEqual(character.attributes,null);
+//		}
+
+//		[Test()]
+//		public void Character_should_have_intelligence ()
+//		{
+//			var character = new Character("Hank Bangflex");
+//			Assert.AreNotEqual(character.intelligence,null);
+//		}
+//
+//		[Test()]
+//		public void Character_should_have_perception ()
+//		{
+//			var character = new Character("Hank Bangflex");
+//			Assert.AreNotEqual(character.perception,null);
+//		}	
+//
+//		[Test()]
+//		public void Character_should_have_charisma ()
+//		{
+//			var character = new Character("Hank Bangflex");
+//			Assert.AreNotEqual(character.charisma,null);
+//		}	
+//
+//		[Test()]
+//		public void Character_should_have_willpower ()
+//		{
+//			var character = new Character("Hank Bangflex");
+//			Assert.AreNotEqual(character.willpower,null);
+//		}	
+//
+//		[Test()]
+//		public void Character_should_have_memory ()
+//		{
+//			var character = new Character("Hank Bangflex");
+//			Assert.AreNotEqual(character.memory,null);
+//		}	
+
 	}
 }
+
+
+
+	
+
+
 
