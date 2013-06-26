@@ -45,7 +45,7 @@ namespace EveCharacterStatus
 				character = new Character(cs.Name);
 
 				character.attributes = new Dictionary<string, double>();
-				
+				character.skills = new Dictionary<string, int> ();
 
 				character.attributes.Add("Intelligence", cs.AttributeIntelligence);
 				character.attributes.Add("Perception", cs.AttributePerception);
@@ -68,6 +68,13 @@ namespace EveCharacterStatus
 				character.attributeTotals.Add ("Charisma", cs.AttributeCharismaTotal);
 				character.attributeTotals.Add ("Willpower", cs.AttributeWillpowerTotal);
 				character.attributeTotals.Add ("Memory", cs.AttributeMemoryTotal);
+
+				foreach(CharacterSheet.LearnedSkill skill in cs.Skills)
+				{
+					character.skills.Add (skill.Skill.Name, skill.Skill.Rank);
+				}
+			
+
 			}
 
 			return this.character;

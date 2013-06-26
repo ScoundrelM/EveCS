@@ -10,6 +10,7 @@ namespace EveCharacterStatus
 		public Dictionary<string, double> attributes;
 		public Dictionary<string,double> attributeAugmentations;
 		public Dictionary<string, double> attributeTotals;
+		public Dictionary<string,int> skills;
 
 		public Character(string _name)
 		{

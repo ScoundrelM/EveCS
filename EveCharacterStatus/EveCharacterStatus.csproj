@@ -67,6 +67,8 @@
     <Compile Include="AttributeWriter.cs" />
     <Compile Include="AttributeWriterTest.cs" />
     <Compile Include="Console.cs" />
+    <Compile Include="SkillWriterTests.cs" />
+    <Compile Include="SkillWriter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

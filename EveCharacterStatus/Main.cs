@@ -10,6 +10,7 @@ namespace EveCharacterStatus
 		public static void Main(string[] args)
 	{
 			AttributeWriter attributeWriter = new AttributeWriter(new ConsoleWriter());
+			SkillWriter skillWriter = new SkillWriter (new ConsoleWriter ());
 
 			ClientForAPI api = new ClientForAPI(1904964, "zesRGv3T3jsETycEd0gChWLvA4VCj1xPN7c5kGgfdwRgrXIE80ARYe1EDcvAUZw7",  268435455);
 
@@ -26,6 +27,11 @@ namespace EveCharacterStatus
 
 				attributeWriter.PrintAttributeBreakdown(attrib.Key, attrib.Value, total.Value, augmentor.Value);
 
+			}
+
+			foreach (KeyValuePair<string,int> skill in character.skills)
+			{
+				skillWriter.PrintSkill (skill);
 			}
 
 			Console.ReadLine();
