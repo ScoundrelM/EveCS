@@ -18,11 +18,19 @@ namespace EveCharacterStatus
 		}
 
 		[Test()]
-		public void Should_print_attribute_breakdown ()
+		public void Should_print_attribute_breakdow()
 		{
 			this.attributeWriter.PrintAttributeBreakdown("Intelligence", 20, 19, 1);
 			Assert.AreEqual("Intelligence: \t\t20 (19) +1", this.mockWriter.lastWritten());
 		}
+
+		[Test]
+		public void Should_not_include_augmentors_in_breakdown_if_value_is_zero()
+		{
+			this.attributeWriter.PrintAttributeBreakdown("Intelligence", 20, 19, 0);
+			Assert.AreEqual("Intelligence: \t\t20 (19)", this.mockWriter.lastWritten());
+		}
+
 
 		[Test()]
 		public void Should_print_attribute()
