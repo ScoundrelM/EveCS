@@ -30,7 +30,14 @@ namespace EveCharacterStatus
 
 		public void PrintAttributeBreakdown(string name, double original, double total,  double augmentor)
 		{
-			console.WriteLine("{0}: \t\t{1} ({2}) +{3}", name, original, total, augmentor);
+			if(augmentor != 0)
+			{
+				console.WriteLine("{0}: \t\t{1} ({2}) +{3}", name, original, total, augmentor);
+			}
+			else
+			{
+				console.WriteLine("{0}: \t\t{1} ({2})", name, original, total, augmentor);
+			}
 		}
 
 		// public void PrintIntelligence(Character charToPrintFor)
