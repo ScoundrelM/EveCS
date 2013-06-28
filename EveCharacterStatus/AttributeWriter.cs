@@ -30,13 +30,21 @@ namespace EveCharacterStatus
 
 		public void PrintAttributeBreakdown(string name, double original, double total,  double augmentor)
 		{
-			if(augmentor != 0)
+		
+			if(total != original + augmentor)
 			{
-				console.WriteLine("{0}: \t\t{1} ({2}) +{3}", name, original, total, augmentor);
+				console.WriteLine("There is a problem with your incoming data. The augmentor plus the base value does not equal the total.")
 			}
 			else
 			{
-				console.WriteLine("{0}: \t\t{1} ({2})", name, original, total, augmentor);
+				if(augmentor != 0)
+				{
+					console.WriteLine("{0}: \t\t{1} ({2}) +{3}", name, original, total, augmentor);
+				}
+				else
+				{
+					console.WriteLine("{0}: \t\t{1} ({2})", name, original, total, augmentor);
+				}
 			}
 		}
 	}
