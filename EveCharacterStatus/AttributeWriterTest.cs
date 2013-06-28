@@ -18,7 +18,7 @@ namespace EveCharacterStatus
 		}
 
 		[Test()]
-		public void Should_print_attribute_breakdown()
+		public void Should_print_attribute_breakdow()
 		{
 			this.attributeWriter.PrintAttributeBreakdown("Intelligence", 20, 19, 1);
 			Assert.AreEqual("Intelligence: \t\t20 (19) +1", this.mockWriter.lastWritten());
@@ -30,7 +30,13 @@ namespace EveCharacterStatus
 			this.attributeWriter.PrintAttributeBreakdown("Intelligence", 20, 19, 0);
 			Assert.AreEqual("Intelligence: \t\t20 (19)", this.mockWriter.lastWritten());
 		}
-
+		
+		[Test]
+		public void Should_not_accept_invalid_information()
+		{
+			this.attributeWriter.PrintAttributeBreakdown("Intelligence", 20,19,0);
+			Assert.AreEqual("There is a problem with your incoming data. The augmentor plus the base value does not equal the total."), this.mockWriter.lastWritten());
+		}
 
 		[Test()]
 		public void Should_print_attribute()
