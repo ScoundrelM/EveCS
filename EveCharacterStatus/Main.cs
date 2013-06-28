@@ -31,7 +31,9 @@ namespace EveCharacterStatus
 
 			foreach (KeyValuePair<string,int> skill in character.skills)
 			{
-				skillWriter.PrintSkill (skill);
+				//console.WriteLine(skill.key, skill.value);
+				// The above works but below does not. WHY?
+				skillWriter.PrintSkill(skill);
 			}
 
 			Console.ReadLine();
