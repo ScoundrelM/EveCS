@@ -14,8 +14,8 @@ namespace EveCharacterStatus
 
 		public void PrintSkill(KeyValuePair<string, int> skillToPrint)
 		{
-			Console.WriteLine("{0} Rank: {1}", skillToPrint.Key, skillToPrint.Value);
+			Console.WriteLine ("{0} Rank: {1}", skillToPrint.Key, skillToPrint.Value);
 		}
-	}
+}
 }
 
