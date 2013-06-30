@@ -1,23 +1,24 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EveCharacterStatus\ClientForAPI.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EveCharacterStatus\AttributeWriterTest.cs">
     <Files>
-      <File FileName="EveCharacterStatus\Main.cs" Line="34" Column="34" />
-      <File FileName="EveCharacterStatus\Character.cs" Line="13" Column="31" />
+      <File FileName="EveCharacterStatus\Main.cs" Line="1" Column="1" />
+      <File FileName="EveCharacterStatus\Character.cs" Line="1" Column="1" />
       <File FileName="EveCharacterStatus\CharacterTest.cs" Line="1" Column="1" />
-      <File FileName="EveCharacterStatus\ClientForAPI.cs" Line="70" Column="71" />
+      <File FileName="EveCharacterStatus\ClientForAPI.cs" Line="1" Column="1" />
       <File FileName="EveCharacterStatus\ClientTest.cs" Line="1" Column="1" />
-      <File FileName="EveCharacterStatus\AttributeWriter.cs" Line="1" Column="1" />
-      <File FileName="EveCharacterStatus\AttributeWriterTest.cs" Line="59" Column="4" />
+      <File FileName="EveCharacterStatus\AttributeWriter.cs" Line="35" Column="47" />
+      <File FileName="EveCharacterStatus\AttributeWriterTest.cs" Line="23" Column="50" />
       <File FileName="EveCharacterStatus\SkillWriterTests.cs" Line="21" Column="34" />
-      <File FileName="EveCharacterStatus\SkillWriter.cs" Line="18" Column="4" />
+      <File FileName="EveCharacterStatus\SkillWriter.cs" Line="18" Column="6" />
+      <File FileName="EveCharacterStatus\Console.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="EveCharacterStatus" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="ClientForAPI.cs" selected="True" />
+            <Node name="AttributeWriterTest.cs" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -28,9 +29,13 @@
         <State />
       </Pad>
       <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State expanded="True" selected="True">
+        <State expanded="True">
           <Node name="EveCharacterStatus" expanded="True">
             <Node name="EveCharacterStatus" expanded="True">
+              <Node name="AttributeWriterTest" expanded="True">
+                <Node name="Should_not_include_augmentors_in_breakdown_if_value_is_zero" selected="True" />
+              </Node>
+              <Node name="CharacterTest" expanded="True" />
               <Node name="SkillWriterTest" expanded="True" />
             </Node>
           </Node>

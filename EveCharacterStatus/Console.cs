@@ -54,7 +54,7 @@ namespace EveCharacterStatus
 		}
 		
 		public void WriteLine(string format, params object[] args) {
-			Console.WriteLine(format, args[0], args[1], args[2], args[3]);
+			Console.WriteLine(format, args);
 		}
 	}
 }

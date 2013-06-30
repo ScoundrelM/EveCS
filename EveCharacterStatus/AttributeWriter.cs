@@ -28,24 +28,26 @@ namespace EveCharacterStatus
 			console.WriteLine("{0} Total: {1}", attributeTotalToPrint.Key, attributeTotalToPrint.Value);
 		}
 
-		public void PrintAttributeBreakdown(string name, double original, double total,  double augmentor)
+		public void PrintAttributeBreakdown(string name, double original, double total)
 		{
-		
-			if(total != original + augmentor)
+			double augmentor = total - original;
+
+			if (augmentor == 0)
 			{
-				console.WriteLine ("There is a problem with your incoming data. The augmentor plus the base value does not equal the total.");
+				console.WriteLine ("{0}: \t\t{1}.", name, total);
 			}
+
 			else
 			{
-				if(augmentor != 0)
-				{
-					console.WriteLine("{0}: \t\t{1} ({2}) +{3}", name, original, total, augmentor);
-				}
-				else
-				{
-					console.WriteLine("{0}: \t\t{1} ({2})", name, original, total, augmentor);
-				}
+				console.WriteLine ("{0}: \t\t{1} ({2}) +{3}", name, total, original, augmentor);
 			}
+
 		}
 	}
-	}
+}
+
+
+
+
+
+

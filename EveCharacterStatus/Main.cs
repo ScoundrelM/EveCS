@@ -22,10 +22,9 @@ namespace EveCharacterStatus
 			{
 				string currentAttribute = attrib.Key;
 
-				KeyValuePair<string,double> augmentor = new KeyValuePair<string,double>(currentAttribute, character.attributeAugmentations[currentAttribute]);
 				KeyValuePair<string,double> total = new KeyValuePair<string, double>(currentAttribute, character.attributeTotals[currentAttribute]);
 
-				attributeWriter.PrintAttributeBreakdown(attrib.Key, attrib.Value, total.Value, augmentor.Value);
+				attributeWriter.PrintAttributeBreakdown(attrib.Key, attrib.Value, total.Value);
 
 			}
 
