@@ -33,7 +33,7 @@ namespace EveCharacterStatus
 		
 			if(total != original + augmentor)
 			{
-				console.WriteLine("There is a problem with your incoming data. The augmentor plus the base value does not equal the total.")
+				console.WriteLine ("There is a problem with your incoming data. The augmentor plus the base value does not equal the total.");
 			}
 			else
 			{

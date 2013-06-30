@@ -35,7 +35,7 @@ namespace EveCharacterStatus
 		public void Should_not_accept_invalid_information()
 		{
 			this.attributeWriter.PrintAttributeBreakdown("Intelligence", 20,19,0);
-			Assert.AreEqual("There is a problem with your incoming data. The augmentor plus the base value does not equal the total."), this.mockWriter.lastWritten());
+			Assert.AreEqual("There is a problem with your incoming data. The augmentor plus the base value does not equal the total.", this.mockWriter.lastWritten());
 		}
 
 		[Test()]
